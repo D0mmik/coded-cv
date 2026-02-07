@@ -7,7 +7,7 @@ export const contentType = 'image/png';
 
 export default async function Image() {
   const fontData = await fetch(
-    new URL('../../public/fonts/JetBrainsMono-Regular.ttf', import.meta.url)
+    'https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff'
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -22,7 +22,6 @@ export default async function Image() {
           fontFamily: 'JetBrains Mono',
         }}
       >
-        {/* Subtle glow */}
         <div
           style={{
             position: 'absolute',
@@ -37,7 +36,6 @@ export default async function Image() {
           }}
         />
 
-        {/* Left side - branding */}
         <div
           style={{
             display: 'flex',
@@ -98,7 +96,6 @@ export default async function Image() {
           </div>
         </div>
 
-        {/* Right side - code preview */}
         <div
           style={{
             display: 'flex',
@@ -111,7 +108,6 @@ export default async function Image() {
             overflow: 'hidden',
           }}
         >
-          {/* Tab bar */}
           <div
             style={{
               display: 'flex',
@@ -126,7 +122,6 @@ export default async function Image() {
             </div>
           </div>
 
-          {/* Code lines */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '15px' }}>
             <div style={{ display: 'flex' }}>
               <span style={{ color: '#858585', width: '30px' }}>1</span>

@@ -7,7 +7,7 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://codedcv.com";
+const siteUrl = "https://codedcv.dstrnadel.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
