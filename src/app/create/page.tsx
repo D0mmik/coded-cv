@@ -54,11 +54,11 @@ function CreatePageContent() {
           <EditorForm />
         </div>
         <div
-          className={`lg:flex-1 lg:block lg:overflow-y-auto bg-[#0a0e14] p-2 sm:p-4 lg:p-6 ${
+          className={`lg:flex-1 lg:block lg:overflow-y-auto bg-[#0a0e14] p-2 sm:p-4 lg:p-6 overflow-x-hidden ${
             activeTab === 'preview' ? 'block w-full' : 'hidden'
           }`}
         >
-          <div className="max-w-4xl mx-auto [zoom:0.38] sm:[zoom:0.75] md:[zoom:0.85] lg:[zoom:1]">
+          <div className="max-w-4xl mx-auto [zoom:0.42] sm:[zoom:0.7] md:[zoom:0.85] lg:[zoom:1]">
             <CVPreview />
           </div>
         </div>
