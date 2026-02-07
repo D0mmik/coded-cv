@@ -28,7 +28,7 @@ export function EditorForm() {
 
   return (
     <div className="space-y-6 p-4">
-      <div className="flex items-end gap-3">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-end gap-3">
         <div className="flex-1">
           <LanguageSelector />
         </div>

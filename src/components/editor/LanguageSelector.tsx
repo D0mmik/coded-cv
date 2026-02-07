@@ -9,7 +9,7 @@ export function LanguageSelector() {
   return (
     <div>
       <label className="text-xs font-mono text-muted-foreground mb-2 block">// Code Language</label>
-      <div className="flex gap-1.5 flex-nowrap">
+      <div className="flex gap-1.5 flex-wrap">
         {CODE_LANGUAGES.map((lang) => (
           <button
             key={lang.value}

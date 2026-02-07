@@ -53,7 +53,7 @@ export function Hero() {
         <span className="text-code-type">Written in Code</span>
       </h1>
 
-      <div className="animate-fade-in-up delay-200 inline-flex items-center px-4 sm:px-5 py-2.5 sm:py-3 rounded-md bg-code-bg border border-editor-border text-sm sm:text-base mb-5 sm:mb-6 w-fit">
+      <div className="animate-fade-in-up delay-200 inline-flex items-center text-sm sm:text-base mb-5 sm:mb-6 w-fit">
         <span className="text-code-comment mr-2 select-none">{'>'}</span>
         <span className="text-code-string">{currentText}</span>
         <span className="w-[2px] h-5 bg-code-keyword ml-0.5 animate-cursor-blink" />

@@ -100,7 +100,7 @@ function ExperienceEntry({
         placeholder="Role / Position"
         className="font-mono text-sm bg-editor-surface border-editor-border"
       />
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <Input
           value={exp.startDate}
           onChange={(e) => onUpdate('startDate', e.target.value)}
@@ -110,7 +110,7 @@ function ExperienceEntry({
         <Input
           value={exp.endDate ?? ''}
           onChange={(e) => onUpdate('endDate', e.target.value || null)}
-          placeholder="End (empty = Present)"
+          placeholder="End (or empty = Present)"
           className="font-mono text-sm bg-editor-surface border-editor-border"
         />
       </div>

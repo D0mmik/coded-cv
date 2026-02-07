@@ -57,7 +57,7 @@ async function convertPdfToImage(pdfData: Uint8Array): Promise<Buffer> {
   }).promise;
 
   doc.destroy();
-  return canvas.toBuffer('image/jpeg', 90);
+  return canvas.toBuffer('image/jpeg', 100);
 }
 
 export async function POST(request: NextRequest) {

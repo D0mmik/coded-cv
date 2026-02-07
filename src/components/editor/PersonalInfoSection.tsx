@@ -118,7 +118,7 @@ export function PersonalInfoSection() {
               type="file"
               accept="image/*"
               onChange={handlePhotoUpload}
-              className="font-mono text-sm bg-editor-surface border-editor-border file:bg-code-keyword/20 file:text-code-keyword file:border-0 file:font-mono file:text-xs"
+              className="font-mono text-sm bg-editor-surface border-editor-border file:bg-code-type/20 file:text-code-type file:border-0 file:font-mono file:text-xs file:mr-2 file:px-2 file:py-0.5 file:rounded file:cursor-pointer file:hover:bg-code-type/30"
             />
             {data.photo && (
               <button

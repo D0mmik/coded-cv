@@ -209,14 +209,16 @@ export function MediaSection() {
         <Input
           value={platform}
           onChange={(e) => setPlatform(e.target.value)}
-          placeholder="Platform"
-          className="font-mono text-sm bg-editor-surface border-editor-border w-28"
+          onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addMedia(); } }}
+          placeholder="Site"
+          className="font-mono text-sm bg-editor-surface border-editor-border w-20 sm:w-28 shrink-0"
         />
         <Input
           value={url}
           onChange={(e) => setUrl(e.target.value)}
+          onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addMedia(); } }}
           placeholder="URL"
-          className="font-mono text-sm bg-editor-surface border-editor-border"
+          className="font-mono text-sm bg-editor-surface border-editor-border min-w-0"
         />
         <button
           onClick={addMedia}

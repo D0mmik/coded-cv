@@ -12,7 +12,7 @@ export function CVPreview({ fullHeight = false, compact = false }: { fullHeight?
   return (
     <div id="cv-preview" className="rounded-lg overflow-hidden border border-editor-border shadow-2xl">
       <CodeHeader />
-      <div data-lang={data.codeLanguage} className={`bg-code-bg font-mono ${compact ? 'text-[7pt] p-[20pt]' : 'text-[9pt] p-[30pt]'} ${fullHeight ? '' : 'aspect-[210/297] overflow-y-auto'}`}>
+      <div data-lang={data.codeLanguage} className={`bg-code-bg font-mono ${compact ? 'text-[7pt] p-[20pt]' : 'text-[9pt] p-[30pt]'} ${fullHeight ? '' : 'lg:aspect-[210/297] lg:overflow-y-auto'}`}>
         <div className="flex gap-3">
           <div className="w-[33%] shrink-0">
             <div className="mb-2">
