@@ -1,11 +1,14 @@
 import { ImageResponse } from 'next/og';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
-export const runtime = 'edge';
 export const alt = 'Coded CV - Your Resume, Written in Code';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default function Image() {
+export default async function Image() {
+  const fontData = await readFile(join(process.cwd(), 'public/fonts/JetBrainsMono-Regular.ttf'));
+
   return new ImageResponse(
     (
       <div
@@ -15,7 +18,7 @@ export default function Image() {
           height: '100%',
           display: 'flex',
           padding: '60px',
-          fontFamily: 'monospace',
+          fontFamily: 'JetBrains Mono',
         }}
       >
         <div
@@ -184,6 +187,16 @@ export default function Image() {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'JetBrains Mono',
+          data: fontData,
+          style: 'normal' as const,
+          weight: 400 as const,
+        },
+      ],
+    }
   );
 }
