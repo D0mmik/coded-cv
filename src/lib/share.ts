@@ -4,12 +4,11 @@ export function buildIntentUrl(cvData: CVData): string {
   const name = `${cvData.personal.firstName} ${cvData.personal.lastName}`.trim();
   const title = cvData.personal.title;
 
-  const parts = ['Check out my Coded CV!'];
-  if (name) parts.push(`${name} - ${title}`);
-  parts.push('\nBuilt with codedcv.com');
+  let text = 'Check out my Coded CV!';
+  if (name) text += `\n${name} - ${title}`;
+  text += '\n\nBuilt with codedcv.dstrnadel.dev';
 
   const intentUrl = new URL('https://twitter.com/intent/tweet');
-  intentUrl.searchParams.set('text', parts.join(' '));
-  intentUrl.searchParams.set('hashtags', 'CodedCV,Developer,Resume');
+  intentUrl.searchParams.set('text', text);
   return intentUrl.toString();
 }
