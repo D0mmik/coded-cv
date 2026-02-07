@@ -4,24 +4,22 @@ Your resume, written in code. A CV builder for developers that renders your resu
 
 **[codedcv.dstrnadel.dev](https://codedcv.dstrnadel.dev)**
 
+<img width="1654" height="2339" alt="cv" src="https://github.com/user-attachments/assets/a63c8d04-9435-444b-9d35-f1049d282205" />
+
 ## Features
 
-- **6 languages** &mdash; C#, Python, TypeScript, Go, Rust, Java
-- **PDF export** &mdash; pixel-perfect A4 output
-- **Image export** &mdash; server-side rendered via Skia
-- **Share on X** &mdash; one-click copy & compose
-- **Dark IDE theme** &mdash; VS Code inspired
-- **Fully responsive** &mdash; works on mobile
-
-## Stack
-
-Next.js &middot; React &middot; Tailwind CSS &middot; shadcn/ui &middot; @react-pdf/renderer &middot; @napi-rs/canvas
+- **6 languages** &dash; C#, Python, TypeScript, Go, Rust, Java
+- **PDF export** &dash; pixel-perfect A4 output
+- **Image export** &dash; server-side rendered via Skia
+- **Share on X** &dash; one-click copy & compose
+- **Dark IDE theme** &dash; VS Code inspired
+- **Fully responsive** &dash; works on mobile
 
 ## Getting started
 
 ```bash
-pnpm install
-pnpm dev
+bun install
+bun run dev
 ```
 
 ## License
